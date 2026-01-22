@@ -12,15 +12,19 @@
 
 #intro h2 {
     color: white;
-    font-size: 40px;
-    padding-top: 40px;
+    font-size: 60px;
+    padding-top: 30px;
 }
 
 #intro h4 {
     color: white;
     padding-top: 10px;
+    font-style: italic;
+    font-weight: 100;
 }
-#main{
+
+#main {
+    padding: 0 100px;
     background-color: rgba(209, 219, 219, 0.144);
 }
 
@@ -33,112 +37,124 @@
     height: 180px;
 }
 
-#about-me h2{
+#about-me h2 {
     text-transform: uppercase;
     padding-top: 30px;
     margin-bottom: 20px;
     color: #2b2b2b;
 }
 
-#about-me p{
+#about-me p {
     color: #5b5b5b;
     font-size: 18px;
 }
+
 #education-sec {
     padding: 0 110px;
-   background-color:  #bbe1fa;
+    background-color: #bbe1fa;
     width: 80%;
     margin: 20px auto 0;
     text-align: center;
     height: 180px;
 }
-#education-sec h2{
+
+#education-sec h2 {
     text-transform: uppercase;
     padding-top: 20px;
     margin-bottom: 10px;
 }
+
 #education-sec div {
     display: flex;
     justify-content: center;
     align-items: center;
-height: 40px;
-background-color: white;
-margin-bottom: 10px;
+    height: 40px;
+    background-color: white;
+    margin-bottom: 10px;
 }
-#skills-sec{
+
+#skills-sec {
     padding: 0 110px;
- background: #fce38a;
+    background: #fce38a;
     width: 80%;
     margin: 20px auto 0;
     text-align: center;
     height: 280px;
 }
-#skills-sec h2{
+
+#skills-sec h2 {
     text-transform: uppercase;
     padding-top: 20px;
     margin-bottom: 10px;
 }
+
 #skills-sec div {
     display: flex;
     justify-content: center;
     align-items: center;
-height: 40px;
-background-color: white;
-margin-bottom: 10px;
+    height: 40px;
+    background-color: white;
+    margin-bottom: 10px;
 }
-#project-sec{
+
+#project-sec {
     padding: 0 110px;
-   background-color: #dcd6f7;
+    background-color: #dcd6f7;
     width: 80%;
     margin: 20px auto 0;
     text-align: center;
     height: 230px;
 }
-#project-sec h2{
+
+#project-sec h2 {
     text-transform: uppercase;
     padding-top: 20px;
     margin-bottom: 10px;
 }
+
 #project-sec div {
     display: flex;
     justify-content: center;
     align-items: center;
-height: 40px;
-background-color: white;
-margin-bottom: 10px;
+    height: 40px;
+    background-color: white;
+    margin-bottom: 10px;
 }
-#contact-sec{
+
+#contact-sec {
     padding: 0 110px;
-   background-color:  #8ef6e5a8;
+    background-color: #8ef6e5a8;
     width: 80%;
     margin: 20px auto 0;
     text-align: center;
     height: 220px;
 }
-#contact-sec h2{
+
+#contact-sec h2 {
     text-transform: uppercase;
     padding-top: 20px;
     margin-bottom: 10px;
 }
+
 #contact-sec div {
     display: flex;
     justify-content: center;
     align-items: center;
-height: 40px;
-background-color: white;
-margin-bottom: 10px;
+    height: 40px;
+    background-color: white;
+    margin-bottom: 10px;
 }
 
-#footer{
+#footer {
     margin-top: 20px;
     margin-bottom: 5px;
     display: flex;
     align-items: center;
     justify-content: center;
     height: 50px;
-     background-color: #17213a;
-     text-transform: uppercase;
-     color: white;
-     font-size: 10px;
-     text-align: center;
+    background-color: #17213a;
+    text-transform: uppercase;
+    color: white;
+    font-size: 10px;
+    text-align: center;
 }
