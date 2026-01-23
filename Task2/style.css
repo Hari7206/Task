@@ -1,0 +1,51 @@
+@font-face {
+    font-family: horror;
+    src: url(./shlop\ rg.otf);
+}
+@font-face {
+    font-family: foggy;
+    src: url(./GraenMetal-Regular.otf);
+}
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+html , body {
+    width: 100%;
+    height: 100%;
+}
+.main{
+      height: 100%;
+    width: 100%;
+   background-image: url("./foggycar.jpg");
+   background-size: cover;
+   text-align: center;
+   
+}
+h1 {
+    padding-top: 110px;
+   font-size: 110px;
+   color: white;
+   font-family: foggy;
+   font-weight: 100;
+  
+}
+.main span {
+    font-family: horror;
+    color: red;
+}
+button{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 10px;
+    height: 40px;
+    width: 120px;
+    margin-top: 10px;
+    text-align: center;
+    border: none;
+    background-color: rgb(255, 94, 0);
+    border-radius: 2px ;
+    font-size: 14px;
+    font-weight: 100;
+    color: white;
+}
