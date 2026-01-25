@@ -4,6 +4,11 @@
 }
 
 @font-face {
+    font-family: PacificoAir;
+    src: url(./satisfy.regular.ttf);
+}
+
+@font-face {
     font-family: SfProBold;
     src: url(./SFPRODISPLAYSEMIBOLDITALIC.OTF);
 }
@@ -21,14 +26,29 @@ body {
     height: 100%;
 }
 
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: white;
+    z-index: 1000;
+    background: rgba(255, 255, 255, 0.92);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+    z-index: 1000;
+}
+
 .navlink {
-    padding: 10px 30px;
-    background-color: white;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 40px;
+    padding: 10px 30px;
+    margin: 0;
+    list-style: none;
 }
+
 
 ul {
     list-style: none;
@@ -86,7 +106,7 @@ ul {
     border-radius: 999px;
     background-color: #0076DF;
     border: none;
-     letter-spacing: 1px;
+    letter-spacing: 1px;
     font-size: 17px;
     font-weight: 100;
 
@@ -94,10 +114,13 @@ ul {
     align-items: center;
     justify-content: center;
 }
+
 .hero-head button {
     margin-top: 20px;
+    margin-right: 10px;
 }
-.hero-head button:nth-child(4){
+
+.hero-head button:nth-child(4) {
     height: 44px;
     padding: 0 22px;
     border-radius: 999px;
@@ -105,7 +128,7 @@ ul {
     border: 1px solid#67b1f1;
     color: #0a80e7;
     font-weight: 50;
-     letter-spacing: 1px;
+    letter-spacing: 1px;
     font-size: 16px;
     font-weight: 500;
 
@@ -113,7 +136,586 @@ ul {
     align-items: center;
     justify-content: center;
 }
-.hero-head button:nth-child(4):hover{
+
+.hero-head button:nth-child(4):hover {
     background-color: #0076DF;
     color: white;
+}
+
+
+.Hero2 {
+    margin-top: 10px;
+    text-align: center;
+    width: 100%;
+    height: 70%;
+    background-size: cover;
+    background-position: center;
+
+    background-image: url(https://www.apple.com/v/home/ck/images/heroes/iphone-family/hero_iphone_family__fuz5j2v5xx6y_largetall.jpg);
+    background-color: #F5F5F7;
+}
+
+.Hero2 .hero-head h1 {
+    font-weight: 900 !important;
+    font-size: 50px;
+}
+
+.Hero3 {
+    margin-top: 10px;
+    text-align: center;
+    width: 100%;
+    height: 70%;
+    background-size: cover;
+    background-position: center;
+
+    background-image: url(https://www.apple.com/v/home/ck/images/heroes/ipad-air/hero_ipad_air_avail__c34ycq52exg2_largetall.jpg);
+    background-color: #F5F5F7;
+}
+
+.Hero3 .hero-head span {
+    background: linear-gradient(to top, #6eb4f6, #0F68BB);
+    background-clip: text;
+    font-family: "PacificoAir";
+    color: transparent;
+    font-weight: 700;
+    font-size: 50px;
+}
+
+.bottom-hero {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    gap: 10px;
+}
+
+.Hero4 {
+    margin-top: 10px;
+    text-align: center;
+    width: 50%;
+    background-size: cover;
+    background-position: center;
+
+    background-image: url(https://www.apple.com/v/home/ck/images/promos/macbook-air/promo_macbook_air__fqowrtnxewqe_large.jpg);
+    background-color: #F5F5F7;
+}
+
+.Hero5 {
+    margin-top: 10px;
+    text-align: center;
+    width: 50%;
+    background-size: cover;
+    background-position: center;
+
+    background-image: url(https://www.apple.com/v/home/ck/images/promos/ipad/promo_ipad__fioegapg12qi_large.jpg);
+    background-color: #F5F5F7;
+}
+
+.bottom-hero2 {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    gap: 10px;
+}
+
+.bottom-hero3 {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    gap: 10px;
+}
+
+.Hero6 {
+    color: white;
+    margin-top: 10px;
+    text-align: center;
+    width: 50%;
+    background-size: cover;
+    background-position: center;
+
+    background-image: url(https://www.apple.com/v/home/ck/images/promos/apple-watch-ultra-3/promo_apple_watch_ultra3__bwvslhbxx99e_large.jpg);
+    background-color: #F5F5F7;
+}
+
+.Hero7 {
+    margin-top: 10px;
+    text-align: center;
+    width: 50%;
+    background-size: cover;
+    background-position: center;
+
+    background-image: url(https://www.apple.com/v/home/ck/images/promos/airpods-pro-3/promo_airpodspro_3__f6xmza7bglei_large.jpg);
+    background-color: #F5F5F7;
+}
+
+.Hero8 {
+    margin-top: 10px;
+    text-align: center;
+    width: 50%;
+    background-size: cover;
+    background-position: center;
+
+    background-image: url(https://www.apple.com/v/home/ck/images/promos/iphone-tradein/promo_iphone_tradein__bugw15ka691e_large.jpg);
+    background-color: #F5F5F7;
+}
+
+.Hero9 {
+    margin-top: 10px;
+    text-align: center;
+    width: 50%;
+    background-size: cover;
+    background-position: center;
+
+    background-image: url(https://www.apple.com/v/home/ck/images/promos/apple-card/promo_apple_card__5cm7draujpey_large.jpg);
+    background-color: #F5F5F7;
+}
+
+.bottom {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    background-color: #F5F5F7;
+}
+
+.bottom h1 {
+    font-size: 55px;
+    letter-spacing: 2px;
+}
+
+.main-section-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background: white;
+    padding-bottom: 40px;
+}
+
+.crousel-wrapper1,
+.crousel-wrapper2 {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    padding: 0 40px;
+    scrollbar-width: none;
+}
+
+.crousel-wrapper1::-webkit-scrollbar,
+.crousel-wrapper2::-webkit-scrollbar {
+    display: none;
+}
+
+.crousel-wrapper1 div {
+    flex: 0 0 70%;
+    height: 700px;
+
+    border-radius: 12px;
+    overflow: hidden;
+
+}
+
+.dotContainer {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.dot {
+    width: 8px;
+    height: 8px;
+    background-color: rgba(194, 20, 20, 0.3);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.dot:hover {
+    background-color: #fff;
+}
+
+.crousel-wrapper1 .first {
+    display: flex;
+    background-image: url(https://is1-ssl.mzstatic.com/image/thumb/7wrtoO8W3jt5HhU87C5KNw/980x522sr.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.crousel-wrapper1 div:nth-child(2) {
+    background-image: url(https://is1-ssl.mzstatic.com/image/thumb/S9dLxU_nCvhomqGnI3-d_g/1250x668sr.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.crousel-wrapper1 div:nth-child(3) {
+    background-image: url(https://is1-ssl.mzstatic.com/image/thumb/0FgquzLoShf3fKiH6lN2GA/1250x668sr.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.crousel-wrapper1 div:nth-child(4) {
+    background-image: url(https://is1-ssl.mzstatic.com/image/thumb/ctu2ZNuCjL3Nyej1udyVRA/1250x668sr.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.crousel-wrapper1 div:nth-child(5) {
+    background-image: url(https://is1-ssl.mzstatic.com/image/thumb/fhmbI8Mv8fXjBW0bVcW2xg/1250x668sr.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.crousel-wrapper1 div:nth-child(6) {
+    background-image: url(https://is1-ssl.mzstatic.com/image/thumb/zLbkVwwHwe8I5EtuXc8wWg/1250x668sr.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.crousel-wrapper1 div:nth-child(7) {
+    background-image: url(https://is1-ssl.mzstatic.com/image/thumb/x58QD4n7Kb8Nyb-N8QY2Tg/1250x668sr.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.crousel-wrapper1 div:nth-child(8) {
+    background-image: url(https://is1-ssl.mzstatic.com/image/thumb/810FL_VK0SEREgoMM3eKtA/1250x668sr.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.crousel-wrapper1 div:nth-child(9) {
+    background-image: url(https://is1-ssl.mzstatic.com/image/thumb/ybeY05k6n-LXE1Z_wccQSw/1250x668sr.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.crousel-wrapper2 div {
+    flex: 0 0 30%;
+    height: 400px;
+
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.crousel-wrapper2 div:nth-child(1) {
+    background-image: url(https://is1-ssl.mzstatic.com/image/thumb/Features/v4/19/1e/e0/191ee015-0c2a-e702-1c22-8df8026b7e21/04229200-c5fe-4439-a4ce-d97f71298c5c.png/226x226SC.DN01.jpg?l=en-US);
+    background-size: cover;
+    background-position: center;
+}
+
+.crousel-wrapper2 div:nth-child(2) {
+    background-image: url(https://is1-ssl.mzstatic.com/image/thumb/Features/v4/da/f9/26/daf926e9-32db-8e0b-5b4f-9aa7ff935bf5/8b5eaee9-d738-4d0d-90eb-e5baa644d838.png/226x226SC.DN01.jpg?l=en-US);
+    background-size: cover;
+    background-position: center;
+}
+
+.crousel-wrapper2 div:nth-child(3) {
+    background-image: url(https://is1-ssl.mzstatic.com/image/thumb/Features211/v4/f0/a3/bf/f0a3bf04-7323-f1bd-5f81-922c9775b5f7/641b4c4d-bfd8-4540-a80f-9a50e0a74854.png/376x508sr.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.crousel-wrapper2 div:nth-child(4) {
+    background-image: url(https://is1-ssl.mzstatic.com/image/thumb/Features221/v4/90/58/c7/9058c798-6841-afd0-4cd0-4ff68e64f20a/4c8c1126-55a7-43f2-a82a-2ef58434ad04.png/376x508nr.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.crousel-wrapper2 div:nth-child(5) {
+    background-image: url(https://is1-ssl.mzstatic.com/image/thumb/Features116/v4/7b/5d/49/7b5d490a-a9b8-15e0-19d0-70e1f2c760d6/d675e2a7-8bb6-40e0-aa60-296128bb9668.png/376x508nr.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.crousel-wrapper2 div:nth-child(6) {
+    background-image: url(https://is1-ssl.mzstatic.com/image/thumb/Features211/v4/7b/c0/f4/7bc0f4f7-e00d-c959-fb51-ff3faa23c73a/f266cf86-5829-49b5-9072-d88500477e5f.png/376x508nr.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.crousel-wrapper2 div:nth-child(7) {
+    background-image: url(https://is1-ssl.mzstatic.com/image/thumb/Features221/v4/92/d5/5e/92d55e54-d0ab-818b-0bfd-f17efabc5f77/73c8043e-2f8d-4e6b-ae0d-b33853494559.png/376x508sr.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.crousel-wrapper2 div:nth-child(8) {
+    background-image: url(https://is1-ssl.mzstatic.com/image/thumb/Features221/v4/54/bb/c6/54bbc694-b01e-d9d4-19a3-417f0a1019fd/b6776eb9-2fc3-4867-8ea5-0d4f7a5bb7c9.png/376x508sr.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.crousel-wrapper2 div:nth-child(9) {
+    background-image: url(https://is1-ssl.mzstatic.com/image/thumb/Features211/v4/f0/a3/bf/f0a3bf04-7323-f1bd-5f81-922c9775b5f7/641b4c4d-bfd8-4540-a80f-9a50e0a74854.png/376x508sr.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.main-section-video-wrapper {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: black;
+    height: 700px;
+}
+
+.main-section-video-wrapper h1 {
+    color: white;
+    margin: 30px 0;
+    font-size: 50px;
+}
+
+.video-sec {
+    overflow-x: auto;
+    overflow-y: hidden;
+    display: flex;
+    gap: 20px;
+
+    padding-inline: 40px;
+
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.videos-sec video {
+    scroll-snap-align: center;
+    width: 280px;
+    border-radius: 12px;
+}
+
+.videos-sec::-webkit-scrollbar {
+    display: none;
+}
+
+footer {
+    background-color: #1D1D1F;
+    padding: 10px 20%;
+}
+
+.detail {
+    color: #9C9C9D;
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+
+}
+
+.detail a {
+    color: #dedee0;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    transform: scaleY(0.3);
+    transform-origin: center;
+    background-color: #9C9C9D;
+}
+
+.extra {
+    display: flex;
+    gap: 120px;
+    padding: 20px 0px;
+}
+
+.firstline,
+.secondLine,
+.thirdLine,
+.fourthLine,
+.fifthLine {
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.first-extra,
+.first-extrab,
+.secondextra,
+.secondextrab,
+.thiredextra,
+.fourthextrad,
+.fourthextrac,
+.fourextrab,
+.fourthextra,
+.fifthLine,
+.fifthextra,
+.fifthextrab {
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+.first-extra h4 {
+    color: rgb(209, 208, 208);
+    font-weight: 100;
+    font-size: 12px;
+}
+
+.first-extra a {
+    color: #9c9c9ddc;
+    text-decoration: none;
+}
+
+.first-extrab h4 {
+    color: rgb(209, 208, 208);
+    font-weight: 100;
+    font-size: 12px;
+}
+
+.first-extrab a {
+    color: #9c9c9ddc;
+    text-decoration: none;
+}
+
+
+
+.secondextra h4 {
+    color: rgb(209, 208, 208);
+    font-weight: 100;
+    font-size: 12px;
+}
+
+.secondextra a {
+    color: #9c9c9ddc;
+    text-decoration: none;
+}
+
+.secondextrab h4 {
+    color: rgb(209, 208, 208);
+    font-weight: 100;
+    font-size: 12px;
+}
+
+.secondextrab a {
+    color: #9c9c9ddc;
+    text-decoration: none;
+}
+
+.thiredextra h4 {
+    color: rgb(209, 208, 208);
+    font-weight: 100;
+    font-size: 12px;
+}
+
+.thiredextra a {
+    color: #9c9c9ddc;
+    text-decoration: none;
+}
+
+.fourthextrad h4 {
+    color: rgb(209, 208, 208);
+    font-weight: 100;
+    font-size: 12px;
+}
+
+.fourthextrad a {
+    color: #9c9c9ddc;
+    text-decoration: none;
+}
+
+.fourthextrac h4 {
+    color: rgb(209, 208, 208);
+    font-weight: 100;
+    font-size: 12px;
+}
+
+.fourthextrac a {
+    color: #9c9c9ddc;
+    text-decoration: none;
+}
+
+.fourextrab h4 {
+    color: rgb(209, 208, 208);
+    font-weight: 100;
+    font-size: 12px;
+}
+
+.fourextrab a {
+    color: #9c9c9ddc;
+    text-decoration: none;
+}
+
+.fourthextra h4 {
+    color: rgb(209, 208, 208);
+    font-weight: 100;
+    font-size: 12px;
+}
+
+.fourthextra a {
+    color: #9c9c9ddc;
+    text-decoration: none;
+}
+
+.fifthextra h4 {
+    color: rgb(209, 208, 208);
+    font-weight: 100;
+    font-size: 12px;
+}
+
+.fifthextra a {
+    color: #9c9c9ddc;
+    text-decoration: none;
+}
+
+.fifthextrab h4 {
+    color: rgb(209, 208, 208);
+    font-weight: 100;
+    font-size: 12px;
+}
+
+.fifthextrab a {
+    color: #9c9c9ddc;
+    text-decoration: none;
+}
+
+.more-way {
+
+    word-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.more-way {
+    color: #9C9C9D;
+    font-size: 14px;
+}
+
+.more-way a {
+    color: #0F68BB;
+    font-size: 14px;
+}
+
+.copyright {
+
+    padding: 20px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.copyright div {
+    font-size: 14px;
+    color: #9c9c9ddc;
+}
+
+.copyrigh-line {
+    display: flex;
+    gap: 20px;
+}
+
+.policy {
+    display: flex;
+    gap: 20px;
+}
+
+.policy a {
+    color: rgb(209, 208, 208);
+    text-decoration: none;
 }
