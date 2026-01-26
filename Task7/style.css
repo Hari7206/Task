@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+/* 🔑 Remove wrappers from grid flow */
+section,
+footer,
+.achivement-stat {
+  display: contents;
+}
+
+main {
+  width: 100%;
+  background: #000;
+  display: grid;
+  gap: 10px;
+
+  grid-template-columns: 1fr 1fr;
+
+  grid-template-areas:
+    "head head"
+    "firm1 firm2"
+    "Hero Hero"
+    "stat stat"
+    "us1 us2"
+    "extext extext"
+    "testi testi"
+    "misacv misacv"
+    "missim misstxt"
+    "imtxt imimg"
+    "gttxt gtimg"
+    "ftone fttwo";
+
+  /* 🔥 THIS prevents big black gaps */
+  grid-auto-rows: min-content;
+}
+
+/* ---------- GRID ITEMS ---------- */
+
+header {
+  grid-area: head;
+  background: yellow;
+  padding: 20px;
+}
+
+.About-firm1 {
+  grid-area: firm1;
+  background: blue;
+  padding: 20px;
+}
+
+.About-firm2 {
+  grid-area: firm2;
+  background: purple;
+  padding: 20px;
+}
+
+.Hero {
+  grid-area: Hero;
+  background: yellow;
+  padding: 40px;
+}
+
+.stat-section {
+  grid-area: stat;
+  background: red;
+  padding: 20px;
+}
+
+.about-us1 {
+  grid-area: us1;
+  background: blue;
+  padding: 20px;
+}
+
+.about-us2 {
+  grid-area: us2;
+  background: purple;
+  padding: 20px;
+}
+
+.experties-text {
+  grid-area: extext;
+  background: red;
+  padding: 20px;
+}
+
+.testimonials {
+  grid-area: testi;
+  background: yellow;
+  padding: 20px;
+}
+
+.mission-achivement {
+  grid-area: misacv;
+  background: red;
+  padding: 20px;
+}
+
+.mission-img {
+  grid-area: missim;
+  background: blue;
+  padding: 20px;
+}
+
+.mission-text {
+  grid-area: misstxt;
+  background: purple;
+  padding: 20px;
+}
+
+.impact-text {
+  grid-area: imtxt;
+  background: blue;
+  padding: 20px;
+}
+
+.impact-img {
+  grid-area: imimg;
+  background: purple;
+  padding: 20px;
+}
+
+.getin-text {
+  grid-area: gttxt;
+  background: blue;
+  padding: 20px;
+}
+
+.getin-img {
+  grid-area: gtimg;
+  background: purple;
+  padding: 20px;
+}
+
+.fotter1 {
+  grid-area: ftone;
+  background: blue;
+  padding: 20px;
+}
+
+.fotter2 {
+  grid-area: fttwo;
+  background: purple;
+  padding: 20px;
+}
