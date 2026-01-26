@@ -1,0 +1,83 @@
+section {
+  padding: 60px;
+  background: #0d0d0d;
+  color: white;
+  text-align: center;
+  overflow: hidden;
+}
+section h1 {
+  margin-bottom: 40px;
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+}
+section .card {
+  display: flex;
+  height: 75vh;
+  gap: 15px;
+}
+section .card .inner-card {
+  flex: 1;
+  overflow: hidden;
+  border-radius: 20px;
+  transition: flex 0.6s ease;
+}
+section .card .inner-card .main-inner {
+  height: 100%;
+  width: 100%;
+  background-image: url("download (22).jpeg");
+  background-size: cover;
+  background-position: top;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 20px;
+  padding: 30px;
+  transition: background-size 0.6s ease;
+  position: relative;
+}
+section .card .inner-card .main-inner::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.2), transparent);
+}
+section .card .inner-card .main-inner .heading,
+section .card .inner-card .main-inner p {
+  position: relative;
+  z-index: 2;
+}
+section .card .inner-card .main-inner h2 {
+  font-size: 5rem;
+  text-transform: uppercase;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  transition: all 0.5s ease;
+}
+section .card .inner-card .main-inner p {
+  max-height: 35%;
+  overflow: hidden;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.4s ease;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+section .card .inner-card:hover {
+  flex: 4;
+}
+section .card .inner-card:hover .main-inner {
+  background-position: top;
+  background-size: 100%;
+}
+section .card .inner-card:hover .main-inner h2 {
+  font-size: 2rem;
+  writing-mode: horizontal-tb;
+}
+section .card .inner-card:hover .main-inner p {
+  opacity: 1;
+  margin-bottom: 20px;
+  margin: 30px 50px;
+  transform: translateY(0);
+}
+
+/*# sourceMappingURL=style.css.map */
