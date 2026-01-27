@@ -1,7 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+   font-family: 'Inter', sans-serif;
 }
 
 html, body {
@@ -9,7 +14,7 @@ html, body {
   height: 100%;
 }
 
-/* 🔑 Remove wrappers from grid flow */
+
 section,
 footer,
 .achivement-stat {
@@ -18,9 +23,9 @@ footer,
 
 main {
   width: 100%;
-  background: #000;
+  background: white;
   display: grid;
-  gap: 10px;
+  /* gap: 10px; */
 
   grid-template-columns: 1fr 1fr;
 
@@ -38,52 +43,246 @@ main {
     "gttxt gtimg"
     "ftone fttwo";
 
-  /* 🔥 THIS prevents big black gaps */
-  grid-auto-rows: min-content;
+
+ grid-template-rows: 80px 180px 600px 280px 500px  120px 500px 120px 300px 280px 300px 300px;
 }
 
-/* ---------- GRID ITEMS ---------- */
 
 header {
   grid-area: head;
-  background: yellow;
+  background: white;
   padding: 20px;
+  display: flex;
+  align-items: center;
+   justify-content: space-between;
+     padding: 0 40px;
+}
+.head1 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.head1 h1{
+  font-size: 25px;
+  color: #000000d5;
+}
+.head1 img{
+  height: 80px;
+  width: 40px;
+object-fit: cover;
+}
+.head2 .nav-links{
+
+  display: flex;
+   gap: 25px;
+ width: 100%;
+}
+.nav-links li {
+  list-style: none;
+}
+.nav-links a{
+    text-decoration: none;
+    color: #4C4C4D;
+}
+.head3{
+  display: flex;
+  gap: 7px
+}
+.head3 button {
+  text-align: center;
+  height: 42px;          
+  padding: 0 24px;      
+  border-radius: 999px;  
+  font-size: 16px;
+  border: 1px solid #0260FE;
+   color: #0260FE;
+  background-color: transparent;
+  cursor: pointer;
+
+  
+}
+.head3 .btn1{
+font-size: 14px;
+}
+.head3 .btn2{
+font-size: 14px;
+background-color: #0260FE;
+color: white;
+}
+.head3 .btn2:hover{
+background-color: #025efedc;
 }
 
+
+.About-firm{
+  grid-area: firm1 / 1 / firm2 / 3; 
+  display: grid;
+  grid-template-columns: 400px 1fr;
+  background: #f6f7f9e1;
+}
 .About-firm1 {
-  grid-area: firm1;
-  background: blue;
-  padding: 20px;
-}
+  
+  background: #f6f7f9e1;
+  padding: 30px 20px;
 
+}
+.About-firm1 h3{
+  font-size: 40px;
+  font-weight: 200;
+   margin-left: 20px;
+}
 .About-firm2 {
-  grid-area: firm2;
-  background: purple;
+  background: #f6f7f9e1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
   padding: 20px;
+  align-items: center;
+  justify-content: center;
+ 
 }
-
+.About-firm2 p{
+  width: 900px;
+  font-size: 16px;
+   color: #4C4C4D;
+}
+.About-btn{
+  display: flex;
+  gap: 10px;
+}
+.About-btn button {
+    text-align: center;
+  height: 42px;          
+  padding: 0 24px;      
+  border-radius: 999px;  
+  font-size: 16px;
+  border: 1px solid #0260FE;
+   color: #0260FE;
+  background-color: transparent;
+    cursor: pointer;
+}
+.About-btn .abt-btn1{
+  font-size: 14px;
+}
+.About-btn .abt-btn2{
+font-size: 14px;
+background-color: #0260FE;
+color: white;
+}
+.About-btn .abt-btn2:hover{
+background-color: #025efedc;
+}
+.Hero-sec{
+  padding: 40px;
+}
 .Hero {
   grid-area: Hero;
-  background: yellow;
-  padding: 40px;
+  background-color: #f6f7f9e1;
+  padding: 20px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Hero img{
+height: 100%;
+width: 100%;
+object-fit: cover;
+ object-position: center ;
+ border-radius: 50px;
+
 }
 
 .stat-section {
   grid-area: stat;
-  background: red;
-  padding: 20px;
+  background: white;
+  padding: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 30px;
+}
+.stat-section div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
+.stat-section h1{
+  font-size: 60px;
+  font-weight: 100;
+}
+.stat-section p{
+    color: #4c4c4d67;
+    text-align: center;
+}
+
+.about-us {
+    background-color: #f6f7f9bb;
+  grid-area: us1 / 1 / us2 / 3;
+  display: grid;
+   max-width: 100%;
+   max-height: 500px;
+  grid-template-columns: 1.2fr 0.8fr;
+    box-sizing: border-box;
+    gap: 230px;
+}
 .about-us1 {
-  grid-area: us1;
-  background: blue;
+ max-height: 500px;
+   background-color: transparent;
   padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 60px 40px;
+}
+.about-us1 button {
+      text-align: center;
+  height: 42px;          
+  padding: 0 24px;      
+  border-radius: 999px;  
+  font-size: 16px;
+  border: 1px solid #4c4c4d67;;
+   color: #4c4c4d67;
+  background-color: transparent;
+    cursor: pointer;
 }
 
+.us-text{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.us-text h3{
+  font-size: 35px;
+  font-weight: 200;
+}
+.us-text p {
+ font-size: 20px;
+  color: #4c4c4dcb;
+   line-height: 30px;
+}
 .about-us2 {
-  grid-area: us2;
-  background: purple;
-  padding: 20px;
+  background-color: transparent;
+    height: 100%;
+  min-height: 100vh;
+   /* padding: 60px 40px; */
+   padding-top: 10px;
+   padding-bottom: 10px;
+  
+}
+
+
+.about-us2 img {
+
+  width: 70%;
+  height: 480px;
+
+  border-radius: 50px;
+  object-fit: 80%;
+  object-position: 20% 20%;
+   overflow: hidden;
+   overflow-y: hidden;
+ 
 }
 
 .experties-text {
