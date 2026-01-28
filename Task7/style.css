@@ -339,7 +339,7 @@ header {
   width: 100%;
   border-radius: 20px;
   background-size: cover;
-  background-position: center;
+  background-position: top;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -370,16 +370,19 @@ header {
 
 #testimg6 {
   background-image: url(https://i.pinimg.com/736x/25/3c/dd/253cddcc9da762ff3e9159cbefd19b2c.jpg);
-  background-position: top !important;
+ 
 }
 
 #testimg7 {
-  background-image: url(https://i.pinimg.com/736x/5a/23/41/5a2341703611d070b70b03573a2ffe8c.jpg);
+  background-image: url(https://i.pinimg.com/1200x/66/c3/23/66c32328dd6cc083c6f3b6cbeea9ceab.jpg);
+  background-position: 50% 20%;
+  background-repeat: no-repeat;
+
 }
 
 #testimg8 {
   background-image: url(https://i.pinimg.com/736x/19/af/82/19af82e12aa0121ac0f54a85f01795d0.jpg);
-  background-position: top center !important;
+  background-position: top !important;
 }
 
 .testi-img h3 {
