@@ -1,0 +1,264 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+main {
+  width: 100%;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 90px 1fr;
+  grid-template-areas:
+    "top top"
+    "left right";
+}
+
+
+
+.nav {
+  grid-area: top;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav-left img {
+  height: 30px;
+}
+
+.nav-mid .list {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+
+.list a {
+  text-decoration: none;
+  color: black;
+  font-size: 1rem;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.nav-right .log {
+  color: black;
+  text-decoration: none;
+}
+.nav-right a {
+    text-decoration: none;
+}
+.nav-right i {
+    color: black;
+}
+.nav-right .icon {
+  background-color: #2C3041;
+  height: 40px;
+  padding: 4px 6px 4px 15px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.icon span {
+  color: white;
+}
+
+.icon i {
+  width: 33px;
+  height: 33px;
+  background-color: #C6CDFF;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* LEFT */
+
+.left {
+  grid-area: left;
+  padding: 50px 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.left .top h3 {
+  font-size: clamp(3rem, 5vw, 6rem);
+  line-height: 1.1;
+}
+
+.left .top img {
+  width: 140px;
+  height: 50px;
+  border-radius: 50px;
+}
+
+.left .top p {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 20px;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  border-radius: 50px;
+  font-size: 0.9rem;
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-top: 25px;
+}
+.contact  i{
+color: white;
+}
+.contact .button {
+  background-color: #2C3041;
+  height: 38px;
+  padding: 0 15px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.contact button {
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 0.9rem;
+}
+
+.contact a {
+  font-size: 1rem;
+  color: #2C3041;
+  text-decoration: none;
+}
+
+.bottom p {
+  max-width: 360px;
+  font-size: 1rem;
+}
+
+.bottom .second {
+  display: flex;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.second div {
+  width: 80px;
+  height: 80px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+/* LOGOS */
+
+.img1 {
+  background-image: url(https://mannatgupta146.github.io/Day19_Task/assets/tide.png);
+}
+
+.img2 {
+  background-image: url(https://mannatgupta146.github.io/Day19_Task/assets/coinbase.png);
+}
+
+.img3 {
+  background-image: url(https://mannatgupta146.github.io/Day19_Task/assets/etoro.png);
+}
+
+.img4 {
+  background-image: url(https://mannatgupta146.github.io/Day19_Task/assets/chip.png);
+}
+
+/* RIGHT */
+
+.right {
+  grid-area: right;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 40px;
+}
+
+.right-first {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background-image: url(https://mannatgupta146.github.io/Day19_Task/assets/image1.jpg);
+  background-size: cover;
+  background-position: center;
+  border-radius: 40px;
+}
+
+.right-second {
+  display: flex;
+  gap: 20px;
+}
+
+.second-first,
+.second-second {
+  flex: 1;
+  aspect-ratio: 1 / 1;
+  background-size: cover;
+  background-position: center;
+  border-radius: 40px;
+}
+
+.second-first {
+  background-image: url(https://mannatgupta146.github.io/Day19_Task/assets/image2.jpg);
+}
+
+.second-second {
+  background-image: url(https://mannatgupta146.github.io/Day19_Task/assets/image3.webp);
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+  main {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "top"
+      "left"
+      "right";
+  }
+
+  .nav-mid {
+    display: none;
+  }
+
+  .left {
+    padding: 40px 25px;
+  }
+
+  .contact {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .right {
+    padding: 20px;
+  }
+}
