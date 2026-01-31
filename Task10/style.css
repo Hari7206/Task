@@ -94,7 +94,7 @@ main {
   justify-content: center;
 }
 
-/* LEFT */
+
 
 .left {
   grid-area: left;
@@ -175,7 +175,6 @@ color: white;
   background-repeat: no-repeat;
 }
 
-/* LOGOS */
 
 .img1 {
   background-image: url(https://mannatgupta146.github.io/Day19_Task/assets/tide.png);
@@ -192,8 +191,6 @@ color: white;
 .img4 {
   background-image: url(https://mannatgupta146.github.io/Day19_Task/assets/chip.png);
 }
-
-/* RIGHT */
 
 .right {
   grid-area: right;
@@ -234,7 +231,7 @@ color: white;
   background-image: url(https://mannatgupta146.github.io/Day19_Task/assets/image3.webp);
 }
 
-/* RESPONSIVE */
+
 
 @media (max-width: 900px) {
   main {
