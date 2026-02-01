@@ -837,12 +837,12 @@ section .footer .bottom .bottm-foter i {
     grid-template-rows: 500px;
     gap: 20px;
   }
+  section .footer .middle h1 {
+    font-size: 1rem;
+  }
   section .footer .middle {
     justify-content: space-around;
     flex-direction: row;
-  }
-  section .footer .middle h1 {
-    font-size: 1rem;
   }
 }
 @media (min-width: 1580px) {
@@ -889,3 +889,5 @@ section .footer .bottom .bottm-foter i {
     display: block;
   }
 }
+
+/*# sourceMappingURL=style.css.map */
