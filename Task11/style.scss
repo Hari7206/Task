@@ -1,3 +1,6 @@
+
+
+
 * {
     margin: 0;
     padding: 0;
@@ -781,7 +784,7 @@ section {
                    @include flexContent(20px);
 
                    h1{
-                    font-size: 2rem;
+                    font-size: 10px !important;
                     font-weight: 400;
                     letter-spacing: 1px;
                    }
@@ -1024,6 +1027,9 @@ section {
 
             }
         }
+
+
+
 
         .footer{
             width: 100%;

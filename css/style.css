@@ -656,7 +656,7 @@ section .footer .middle .mid-top {
   gap: 20px;
 }
 section .footer .middle .mid-top h1 {
-  font-size: 2rem;
+  font-size: 10px !important;
   font-weight: 400;
   letter-spacing: 1px;
 }
